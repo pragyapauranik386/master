@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.my.app.rest.MainApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.619 s <<< FAILURE! - in com.my.app.rest.MainApplicationTests
+testGetEmployeeList_success(com.my.app.rest.MainApplicationTests)  Time elapsed: 0.114 s  <<< ERROR!
+java.lang.NoClassDefFoundError: org/apache/http/client/HttpClient
+	at com.my.app.rest.MainApplicationTests.getClientHttpRequestFactory(MainApplicationTests.java:40)
+	at com.my.app.rest.MainApplicationTests.setUp(MainApplicationTests.java:34)
+Caused by: java.lang.ClassNotFoundException: org.apache.http.client.HttpClient
+	at com.my.app.rest.MainApplicationTests.getClientHttpRequestFactory(MainApplicationTests.java:40)
+	at com.my.app.rest.MainApplicationTests.setUp(MainApplicationTests.java:34)
+
